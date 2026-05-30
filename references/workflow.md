@@ -70,3 +70,19 @@ For a GitHub Pages static site:
    - homepage returns 200
    - `data/summary.json` returns 200
    - summary counts include `takeoutProviderCounts` and `deliveryProviderCounts`
+   - the county selector updates metric cards, provider charts, the Taiwan map, and detail rows together
+   - the Taiwan county map renders 22 county/city labels and each label shows the current store count
+   - county-map counts sum to the current displayed store total
+   - six-region cards show `台北基宜`, `桃竹苗`, `中彰投`, `雲嘉南`, `高屏`, and `花東`; their sum matches the displayed store total unless offshore counties are intentionally shown separately
+
+## Taiwan Map Site Pattern
+
+When the user asks for geographic distribution, add a self-contained Taiwan map section to the static site:
+
+- Put six-region summary cards above the map.
+- Render county/city counts directly on the map, not only in a table.
+- Include `0` for counties where the brand has no stores.
+- Provide a compact county list next to or below the map for scanability.
+- Avoid external map services for the core visual; use inline SVG or local static assets so GitHub Pages remains stable.
+- Make the map respond to the same global county/city dropdown as the metric cards and detail table.
+- On mobile, ensure the map does not create horizontal scrolling and labels remain readable.
