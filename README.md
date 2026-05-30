@@ -10,6 +10,25 @@
 - 產生 `stores.json`、`summary.json`、CSV 資料
 - 建立或更新靜態 GitHub Pages 分析網站
 
+## 安裝方式
+
+建議使用 Codex 內建的 **Skill Installer** 安裝。
+
+請在 Codex 開一個新對話，貼上：
+
+```text
+請幫我安裝這個 Skill：
+https://github.com/daphnegood1/gmb-order-provider
+```
+
+安裝完成後，重新開啟 Codex，然後搜尋：
+
+```text
+GMB Order Provider
+```
+
+完整安裝說明請看 [INSTALL.md](INSTALL.md)。
+
 ## Skill 結構
 
 ```text
@@ -22,10 +41,6 @@ gmb-order-provider/
   references/
   scripts/
 ```
-
-## 快速安裝
-
-請看 [INSTALL.md](INSTALL.md)。
 
 ## 注意事項
 
