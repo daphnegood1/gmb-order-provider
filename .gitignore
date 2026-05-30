@@ -1,0 +1,25 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+Thumbs.db
+
+# Local secrets and credentials
+.env
+.env.*
+*.pem
+*.key
+*.p12
+credentials*
+secrets*
+
+# Generated audit outputs
+data/
+dist/
+build/
+reports/
+*.log
+
+# Local dependency/cache folders
+.codex_tools/
+.venv/
+venv/
